@@ -592,11 +592,11 @@ img {
   gap: 48px 24px;
 }
 
-.portfolio-image {
+/* .portfolio-image {
   display: block;
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* .portfolio-image:hover,
 .portfolio-image:focus {
@@ -632,33 +632,50 @@ img {
   letter-spacing: 0.32px;
   padding: 40px 32px;
   background: var(--iris-btn-color);
-  transform: translateY(0); 
+  transform: translateY(100%); 
   transition: transform var(--transition-animation);
 
 }
 
-.portfolio-photo-item {
-  flex-basis: calc((100% - 2 * 24px) / 3);
-  transition: var(--transition-animation);
+.portfolio-link:hover .potfolio-top-text,
+.portfolio-link:focus .potfolio-top-text {
+  transform: translateY(0%);
 }
 
-.portfolio-photo-item:hover .potfolio-top-text,
-.portfolio-photo-item:focus .potfolio-top-text {
-  transform: translateY(0%);
-} 
+.portfolio-link {
+  display: block;
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.portfolio-photo-item:hover,
-.portfolio-photo-item:focus {
-  transform: translateY(0%);
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* Змінити transform для параграфа при фокусі на посиланні */
+/* .portfolio-photo-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+  transition: var(--transition-animation);
+} */
+
+/* .portfolio-photo-item:hover .potfolio-top-text,
+.portfolio-photo-item:focus .potfolio-top-text {
+  transform: translateY(0%);
+}  */
+
+/* .portfolio-photo-item:hover,
+.portfolio-photo-item:focus {
+  transform: translateY(0%);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+} */
+
+/* Змінити transform для параграфа при фокусі на посиланні
 .portfolio-photo-item:hover .portfolio-image:hover .potfolio-top-text,
 .portfolio-photo-item:focus .portfolio-image:focus .potfolio-top-text {
   transform: translateY(0%);
-}
+} */
 
 .portfolio-photo-title {
   font-weight: 500;
