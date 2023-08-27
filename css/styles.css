@@ -660,6 +660,9 @@ img {
   transform: translateY(0%);
 }
 
+.link {
+  transform: translateY(0%); 
+}
 
 .portfolio-photo-title {
   font-weight: 500;
