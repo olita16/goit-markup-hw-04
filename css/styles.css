@@ -651,6 +651,13 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+/* Змінити transform для параграфа при фокусі на посиланні */
+.portfolio-photo-item:hover .portfolio-image:focus .potfolio-top-text,
+.portfolio-photo-item:focus .portfolio-image:focus .potfolio-top-text {
+  transform: translateY(0%);
+}
+
+
 .portfolio-photo-title {
   font-weight: 500;
   font-size: 20px;
