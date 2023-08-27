@@ -608,6 +608,7 @@ img {
 .portfolio-description {
   position: relative;
   overflow: hidden;
+  transform: translateY(0%);
 }
 
 .portfolio-box {
@@ -658,10 +659,6 @@ img {
 .portfolio-photo-item:hover .portfolio-image:hover .potfolio-top-text,
 .portfolio-photo-item:focus .portfolio-image:focus .potfolio-top-text {
   transform: translateY(0%);
-}
-
-.link {
-  transform: translateY(0%); 
 }
 
 .portfolio-photo-title {
