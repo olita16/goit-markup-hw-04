@@ -604,11 +604,6 @@ img {
 }
 
 
-.portfolio-image:hover .portfolio-top-text,
-.portfolio-image:focus .portfolio-top-text {
- transform: translateY(0%);
-}
-
 .portfolio-description {
   position: relative;
   overflow: hidden;
@@ -620,10 +615,6 @@ img {
   padding: 32px 16px;
 }
 
-.portfolio-image-link {
-  flex-basis: calc((100% - 2 * 24px) / 3);
-  text-decoration: none;
-}
 
 .potfolio-top-text {
   position: absolute;
@@ -640,7 +631,7 @@ img {
   letter-spacing: 0.32px;
   padding: 40px 32px;
   background: var(--iris-btn-color);
-  transform: translateY(0%);
+  transform: translateY(100%); 
   transition: transform var(--transition-animation);
 
 }
