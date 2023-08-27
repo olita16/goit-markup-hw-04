@@ -598,17 +598,16 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-image:hover,
+/* .portfolio-image:hover,
 .portfolio-image:focus {
   transform: translateY(0%);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
-}
+} */
 
 
 .portfolio-description {
   position: relative;
   overflow: hidden;
-  transform: translateY(0%);
 }
 
 .portfolio-box {
@@ -633,7 +632,7 @@ img {
   letter-spacing: 0.32px;
   padding: 40px 32px;
   background: var(--iris-btn-color);
-  transform: translateY(100%); 
+  transform: translateY(0); 
   transition: transform var(--transition-animation);
 
 }
