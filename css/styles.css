@@ -598,6 +598,11 @@ img {
   transition: box-shadow (--transition-animation);
 }
 
+.portfolio-image:hover,
+.portfolio-image:focus {
+ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
+}
+
 .portfolio-description {
   position: relative;
   overflow: hidden;
@@ -609,44 +614,49 @@ img {
   padding: 32px 16px;
 }
 
+.portfolio-image-link {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+  text-decoration: none;
+}
 
 .potfolio-top-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--expert-section-background-color);
   position: absolute;
   top: 0;
   left: 0;
-  padding: 40px 32px;
-  background-color: var(--iris-btn-color);
   width: 100%;
   height: 100%;
+  color: var(--expert-section-background-color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
+  padding: 40px 32px;
+  background: var(--iris-btn-color);
   transform: translateY(100%);
   transition: transform var(--transition-animation);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.portfolio-image:hover .potfolio-top-text,
+.portfolio-image:focus .potfolio-top-text {
+  transform: translateY(0%);
 }
 
+
+.portfolio-image:hover,
+.portfolio-image:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .portfolio-photo-item {
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
-.portfolio-photo-item:hover,
-.portfolio-photo-item:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 
-.portfolio-photo-item:hover .portfolio-top-text,
-.portfolio-photo-item:focus .portfolio-top-text {
-  transform: translateY(0);
-}
-
-.portfolio-image-link {
-  flex-basis: calc((100% - 2 * 24px) / 3);
-  text-decoration: none;
-}
 
 .portfolio-photo-title {
   font-weight: 500;
